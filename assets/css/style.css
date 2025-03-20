@@ -58,6 +58,10 @@ ul {
     list-style: none;
 }
 
+p, li{
+    font-weight: 700;
+}
+
 /* CSS main */
 /* CSS banner */
 
@@ -169,6 +173,10 @@ ul {
     text-align: center;
 }
 
+.accompagnement-titre {
+    margin: 5vh 0;
+}
+
 .accompagnement-items {
     display: flex;
     flex-direction: row;
@@ -245,12 +253,15 @@ ul {
 .blog {
     display: flex;
     justify-content: center;
-    margin: 0 14vw;
+    margin: 2vh 14vw;
+    border-bottom: 2px solid #68D8EE;
+}
+
+.blog-image {
+    height: 20rem;
 }
 
 .blog-image img {
-    width: 16vw;
-    height: 16vw;
 }
 
 .blog-texte {
@@ -261,10 +272,44 @@ ul {
     margin-bottom: 6vh;
 }
 
-.blog::after {
+/* CSS footer */
+
+#ends {
+    background-color: grey;
+    margin-bottom: 0;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+.end-logo {
+    width: 10%;
+    border-right: 2px solid black;
+}
+
+.end-logo img {
+    height: 20vh;
+}
+
+.end-text {
+    margin-left: 4vw;
+}
+
+.credit ul {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+}
+
+.credit ul li:not(:last-child)::after {
     content: "";
-    display: inline-block;
-    height: 2px;
-    background-color: #68D8EE;
-    margin-bottom: -2rem;
+    border: 1px solid black;
+    margin-left: 2vh;
 }
