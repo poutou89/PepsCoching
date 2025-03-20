@@ -203,11 +203,11 @@ p, li{
     align-items: center;
 }
 
-.accompagnement-card h2 {
+.accompagnement-card h3 {
     margin: 0;
 }
 
-.accompagnement-items .accompagnement-card:first-of-type h2:last-of-type::after {
+.accompagnement-items .accompagnement-card:first-of-type h3:last-of-type::after {
     content: "";
     display: block;
     height: 2vh;
@@ -215,7 +215,7 @@ p, li{
     margin-top: -1rem;
 }
 
-.accompagnement-items .accompagnement-card:nth-child(2) h2:last-of-type::after {
+.accompagnement-items .accompagnement-card:nth-child(2) h3:last-of-type::after {
     content: "";
     display: block;
     height: 2vh;
@@ -223,7 +223,7 @@ p, li{
     margin-top: -1rem
 }
 
-.accompagnement-items .accompagnement-card:last-of-type h2:last-of-type::after {
+.accompagnement-items .accompagnement-card:last-of-type h3:last-of-type::after {
     content: "";
     display: block;
     height: 2vh;
@@ -386,7 +386,7 @@ p, li{
         flex-wrap: wrap;
     }
 
-    .description-text h2 {
+    .description-text h3 {
         text-align: center;
     }
 
@@ -432,7 +432,7 @@ p, li{
         width: auto;
     }
 
-    .accompagnement-card h2 {
+    .accompagnement-card h3 {
         font-size: 32px;
     }
 
