@@ -162,7 +162,7 @@ p, li{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10vh 25vh;
+    gap: 10vh 20vh;
     padding: 0;
 }
 
@@ -253,7 +253,7 @@ p, li{
 
 .blog {
     display: flex;
-    margin: 2vh 14vw;
+    margin: 10vh 14vw;
     border-bottom: 2px solid #68D8EE;
 }
 
@@ -267,10 +267,12 @@ p, li{
 
 .blog-texte {
     margin-left: 2vw;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .blog-texte p {
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
 }
 
 /* CSS footer */
@@ -332,6 +334,8 @@ p, li{
 
     nav ul {
         flex-direction: column;
+        gap: 10vh;
+        
     }
 
     nav ul li {
@@ -384,6 +388,10 @@ p, li{
 
     /* CSS methodes */
 
+    #methodes {
+    padding: 0;
+    }
+
     .methode-liste {
         flex-direction: column;
         gap: 4vh;
@@ -426,6 +434,10 @@ p, li{
         width: auto;
     }
 
+    .accompagnement-card p {
+        margin-top: 0;
+    }
+
     /* CSS Blog */
 
     .blog {
@@ -434,6 +446,8 @@ p, li{
         align-items: center;
         margin: 0;
     }
+
+    
 
     .blog-image {
         width: 90%;
@@ -470,4 +484,10 @@ p, li{
         text-align: center;
         padding-left: 0;
     }
+    .credit ul li:not(:last-child)::before {
+        content: "";
+        border: 1px solid black;
+        margin-right: 2vh;
+    }
+    
 }
